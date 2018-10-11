@@ -18,7 +18,9 @@ class HerokuPostDeploy extends Command
          * In production we only run migration
          */
         if (app()->environment('production')) {
-            $this->call('migrate', ['--force',  true]);
+            $this->call('migrate', [
+                '--force' => true,
+            ]);
 
             return;
         }
