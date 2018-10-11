@@ -45,6 +45,7 @@ heroku config:set --app $app_name APP_ENV=production APP_DEBUG=false APP_LOG_LEV
 ```
 git push heroku master
 heroku run -a $app_name php artisan postdeploy:heroku
+heroku run -a $app_name php artisan admin:install
 ```
 
 ## Heroku Configuration
