@@ -38,6 +38,7 @@ heroku config:set --app $app_name APP_KEY=$(php artisan --no-ansi key:generate -
 heroku config:set --app $app_name QUEUE_DRIVER=redis SESSION_DRIVER=redis CACHE_DRIVER=redis
 # heroku config:set --app $app_name APP_ENV=development APP_DEBUG=true APP_LOG_LEVEL=debug
 heroku config:set --app $app_name APP_ENV=production APP_DEBUG=false APP_LOG_LEVEL=info
+heroku config:set --app $app_name APP_URL=http://therightway.herokuapp.com
 ```
 
 ### Deploy
