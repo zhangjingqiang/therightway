@@ -16,6 +16,7 @@
 <!-- Styles -->
 <style>
     body {
-        padding-top: 50px;
+        min-height: 75rem;
+        padding-top: 4.5rem;
     }
 </style>
